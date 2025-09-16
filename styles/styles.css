@@ -1,10 +1,12 @@
 :root {
     --border: 1px solid black;
+    --margin: 10px;
+    --padding: 10px;
 }
 
 nav { 
     background-color: darkblue;
-    padding: 10px;
+    padding: var(--padding);
 }
 
 nav a {
@@ -26,9 +28,9 @@ main img {
 
 aside {
     width: 20rem;
-    margin: 1rem;
+    margin: var(--margin);
     border: var(--border);
-    padding: 1rem;
+    padding: var(--padding);
     background-color: #dcf1ec;
     color: black;
     text-align: center;
@@ -48,7 +50,7 @@ p {
 }
 
 footer {
-    margin-top: 10px;
+    margin-top: var(--margin);
     border-top: var(--border);
     text-align: center;
 }
