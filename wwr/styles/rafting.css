@@ -1,0 +1,76 @@
+:root {
+    --primary-color:  #B01111; /* Cornell Red */
+    --secondary-color: #0267C1; /* Green Blue */
+    --accent1-color: #FFE66D; /* Naples Yellow */
+    --accent2-color: #D7FCD4; /* Tea Green */
+    --heading-font: "Roboto Slab", "Georgia", serif;
+    --body-font: "Roboto", Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: black;
+}
+
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    text-align: center;
+    padding: 16px;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.hero article {
+    position: absolute;
+    top: 125px;
+    right: 1px;
+    color: white;
+    width: 450px;
+}
+
+.hero article img {
+    float: right;
+    max-width: 200px;
+    height: auto;
+    border: 2px white solid;
+}
+
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
