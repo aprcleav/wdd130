@@ -3,7 +3,7 @@
     --secondary-color: #191a74; /* Midnight Blue */
     --accent1-color: #e4e5e9; /* Platinum */
     --accent2-color: #acaacd; /* Cool Grey */
-    --heading-font: "Trebuchet MS", serif;
+    --heading-font: "Trebuchet MS", sans-serif;
     --body-font: Arial, sans-serif;
 }
 
