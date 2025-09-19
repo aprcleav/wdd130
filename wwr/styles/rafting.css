@@ -23,10 +23,6 @@ header, main, footer {
     margin: 0 auto;
 }
 
-section {
-    margin: 0;
-}
-
 .hero {
     position: relative;
 }
@@ -45,7 +41,16 @@ h1, h2 {
     background-color: var(--primary-color);
 }
 
-.hero h1 {
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -69,13 +74,4 @@ h1, h2 {
     max-width: 200px;
     height: auto;
     border: 2px white solid;
-}
-
-nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
-}
-
-.socialmedia a {
-    text-decoration: none;
 }
