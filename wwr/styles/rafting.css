@@ -5,6 +5,7 @@
     --accent2-color: #acaacd; /* Cool Grey */
     --heading-font: "Trebuchet MS", sans-serif;
     --body-font: Arial, sans-serif;
+    --border: solid 2px #104234;
 }
 
 * {
@@ -23,31 +24,12 @@ header, main, footer {
     margin: 0 auto;
 }
 
-.hero {
-    position: relative;
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
 h1, h2 {
     font-family: var(--heading-font);
     color: white;
     text-align: center;
     padding: 16px;
     background-color: var(--primary-color);
-}
-
-nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
-}
-
-.socialmedia a {
-    text-decoration: none;
 }
 
 h1 {
@@ -59,6 +41,57 @@ h1 {
     color: white;
     border-top: 2px solid white;
     border-bottom: 2px solid white;
+}
+
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    margin: 30px;
+    max-width: 200px;
+}
+
+nav {
+    padding: 20px 0 20px 0;
+    border-bottom: var(--border);
+    border-top: var(--border);
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+nav ul li {
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a {
+    align-items: space-around;
+    text-decoration: none;
+    color:#104234;
+
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .hero article {
@@ -74,4 +107,63 @@ h1 {
     max-width: 200px;
     height: auto;
     border: 2px white solid;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.history h2 {
+    grid-column: 1/4;
+}
+
+.history img {
+    margin: 16px;
+    padding: 8px;
+    max-height: 200px;
+}
+
+.adventure {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.adventure h2 {
+    grid-column: 1/6;
+}
+
+.adventure img {
+    max-width: 157px;
+    padding: 5px;
+}
+
+.adventure figcaption {
+    text-align: center;
+    font-size: small;
+}
+
+footer {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 150px;
+    align-items:center;
+    justify-content:end;
+    border-top: var(--border);
+}
+
+.socialmedia {
+    border: none;
+    text-decoration: none;
+}
+
+.socialmedia img {
+    max-width: 30px;
+    padding: 0 5px;
+}
+
+footer p {
+    text-align: center;
 }
