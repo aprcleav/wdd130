@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact West Coast Rapids</title>
+    <meta name="description"
+        content="Contact Page for West Coast Rapids, a fictitious company created for a WDD130 project at BYU-Idaho.">
+    <meta name="author" content="April Cleaver">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/z-rapids-trees.jpg" alt="West Coast Rapids logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="address">
+            <h1>West Coast Rapids</h1>
+            <p>1492 Columbus Road</p>
+            <p>West Coast, Washington</p>
+            <p>+1 000 867 5309</p>
+            <p>info@westcoastrapids.com</p>
+        </section>
+        <div class="map-area">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3936.7120325276005!2d-121.53628693510197!3d45.75764558381659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54966b94e2ecc337%3A0x138f669733107c8e!2sWhite%20Salmon%20River!5e0!3m2!1sen!2sus!4v1759435829354!5m2!1sen!2sus"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <form>
+                <fieldset>
+                    <label class="bold">Name<input type="text" name="name"></label>
+                </fieldset>
+                <fieldset>
+                    <label class="bold">Email<input type="email" name="email"></label>
+                </fieldset>
+                <fieldset class="purpose">
+                    <legend class="bold">Message Purpose</legend>
+                    <label><input type="radio" name="Message Purpose" value="General Inquiry"> General
+                        Inquiry</label><br>
+                    <label><input type="radio" name="Message Purpose" value="Reservation Question"> Reservation
+                        Question</label><br>
+                    <label><input type="radio" name="Message Purpose" value="Website Suggestion"> Website
+                        Suggestion</label><br>
+                </fieldset>
+                <fieldset>
+                    <label class="bold">Message<textarea name="message" rows="4" placeholder="Type here"></textarea>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label><input class="check" type="checkbox" name="newsletter">Please Subscribe me to the monthly
+                        newsletter</label>
+                </fieldset>
+                <button type="submit">Get in Touch!</button>
+            </form>
+        </div>
+        <section class="service">
+            <h2>We Are Here to Serve You</h2>
+            <figure>
+                <img src="images/headshot1.webp" alt="Ericka Johnson">
+                <figcaption>Ericka Johnson, Operations Manager</figcaption>
+            </figure>
+            <figure>
+                <img src="images/headshot3.webp" alt="Bethany Smith">
+                <figcaption>Bethany Smith, Whitewater Photographer</figcaption>
+            </figure>
+            <figure>
+                <img src="images/headshot4.webp" alt="Josh Allen">
+                <figcaption>Josh Allen, River Guide</figcaption>
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 | West Coast Rapids | April Cleaver</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com" target="blank"><img src="images/facebook-icon.png" alt="facebook icon"></a>
+            <a href="https://instagram.com" target="blank"><img src="images/instagram-icon.png"
+                    alt="instagram icon"></a>
+            <a href="https://x.com" target="blank"><img src="images/x-icon.png" alt="x (formerly twitter) icon"></a>
+        </nav>
+    </footer>
+</body>
+
+</html>
