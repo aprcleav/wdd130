@@ -43,7 +43,7 @@ h1 {
     border-bottom: 2px solid white;
 }
 
-nav, p, section, article {
+nav, p, section {
     margin: 16px 0;
     padding: 8px 0;
 }
@@ -188,6 +188,7 @@ nav ul li a {
 .card {
     background-color: var(--accent1-color);
     margin: 0 10px;
+    height: 500px;
 }
 
 .card p {
@@ -253,15 +254,17 @@ table td {
 
 .hero article {
     position: absolute;
-    top: 125px;
+    top: 110px;
     right: 1px;
     color: white;
     width: 450px;
+    padding: 10px;
+    text-align: right;
 }
 
 .hero article img {
     float: right;
-    max-width: 200px;
+    max-width: 240px;
     height: auto;
     border: 2px white solid;
     margin: 0 20px;
@@ -269,7 +272,7 @@ table td {
 
 .history {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
     margin-bottom: 0;
@@ -280,9 +283,13 @@ table td {
     grid-column: 1/4;
 }
 
+.history p {
+    padding: 15px;
+}
+
 .history img {
     margin: 16px 16px 0 16px;
-    max-height: 300px;
+    max-height: 350px;
 }
 
 .adventure {
